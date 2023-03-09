@@ -569,6 +569,10 @@ img {
 
 }
 
+.menu{
+    cursor: pointer;
+}
+
 .overlay {
     height: 100%;
     width: 0;

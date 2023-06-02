@@ -265,7 +265,7 @@
     }
 
     .skills {
-        height: 1800px;
+        height: 1130px;
     }
 
     .skills_content .col-md-5 {
@@ -362,7 +362,7 @@
 @media (max-width: 590px) {
 
     .skills {
-        height: 2230px;
+        height: 1290px;
     }
 
     .middle_info p:nth-child(2) {
@@ -385,6 +385,9 @@
 }
 
 @media (max-width: 500px) {
+    .l_pic {
+        top: -135px;
+    }
 
     .r_text {
         padding: 410px 40px 105px 40px;
@@ -621,7 +624,7 @@
     }
 
     .skills {
-        height: 1750px;
+        height: 1080px;
     }
 
     .skills_item_des {

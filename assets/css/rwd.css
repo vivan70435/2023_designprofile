@@ -23,9 +23,6 @@
     }
 
     .r_text {
-        position: absolute;
-        right: 0;
-        top: 0;
         padding: 100px 740px 100px 220px;
     }
 }
@@ -41,25 +38,22 @@
         bottom: 138px;
         color: #f93801;
     }
-
     .r_text {
-        position: absolute;
-        right: 0;
-        top: 0;
         padding: 100px 390px 100px 190px;
     }
 }
 
-
+@media (min-width:1515px) {
+    .dis-n-1515{
+        display: none;
+    }
+}
 @media (max-width: 1171px) {
     .l_pic img {
         width: 80%;
     }
 
     .r_text {
-        position: absolute;
-        right: 0;
-        top: 0;
         padding: 100px 110px 100px 110px;
     }
 
@@ -77,25 +71,15 @@
         height: 750px;
     }
 
-    .experience {
-        margin-top: 350px;
-    }
-
-}
-
-@media (max-width: 875px) {
-
-    .experience {
-        margin-top: 500px;
-    }
-
 }
 
 
 /*=================768px======================*/
 
 @media (max-width: 769px) {
-
+    .mt420{
+        margin-top: 0;
+    }
     .kv .kv_center img {
         width: 100%;
     }
@@ -142,10 +126,6 @@
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
         max-width: 100%;
-    }
-
-    .about_text a {
-        bottom: -150px;
     }
 
     .tab-content {
@@ -227,9 +207,6 @@
     }
 
     .r_text {
-        position: absolute;
-        right: 0;
-        top: 100px;
         padding: 620px 35px 100px 35px;
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
@@ -268,10 +245,6 @@
     .accordion_outter {
         flex: 0 0 100%;
         max-width: 100%;
-    }
-
-    .experience {
-        margin-top: 580px;
     }
 
     .skills .title {
@@ -331,11 +304,11 @@
         margin-left: 0;
     }
 
-    .work_right_content {
+    /* .work_right_content {
         -ms-flex: 0 0 83.333333%;
         flex: 0 0 83.333333%;
         max-width: 83.333333%;
-    }
+    } */
 
     .project_detail_items {
         padding: 40px;
@@ -366,9 +339,6 @@
         color: #f93801;
     }
 
-    .experience {
-        margin-top: 720px;
-    }
 }
 
 @media (max-width: 700px) {
@@ -378,6 +348,12 @@
 }
 
 @media (max-width: 650px) {
+    .tab-wrapper {
+        display: none;
+    }
+    .tab-content{
+        margin-top: 0;
+    }
     .footer {
         padding: 60px 60px 200px 60px;
     }
@@ -614,11 +590,7 @@
 
 
     .r_text {
-        padding: 360px 26px 35px 26px;
-    }
-
-    .experience {
-        margin-top: 640px;
+        padding: 300px 35px 35px 35px;
     }
 
     .rotate_hithere {
@@ -739,10 +711,6 @@
         font-size: 0.6rem;
     }
 
-    .tab-wrapper {
-        padding: 0;
-    }
-
     .tab-content .tab-pane .works_thumbnail .rotate_works {
         width: 75px;
         height: 75px;
@@ -762,10 +730,6 @@
         text-align: center;
         font-weight: 900;
         margin-bottom: 5px;
-    }
-
-    .experience {
-        margin-top: 730px;
     }
 
 }
@@ -958,11 +922,8 @@
         padding: 290px 26px 35px 26px;
     }
 
-    .experience {
-        margin-top: 830px;
-    }
-
     .work_kv_title:after {
         top: 100px;
     }
 }
+

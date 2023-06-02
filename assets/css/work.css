@@ -40,6 +40,12 @@
     color: #a6a6a6;
 }
 
+.work_en_title {
+    font-size: 10px;
+    color: #a6a6a6;
+    letter-spacing: 3px;
+}
+
 .work_kv_title p span {
     margin-left: 20px;
 }

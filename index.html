@@ -35,7 +35,7 @@
         <!-- KV -->
         <div class="kv bg_maingray" id="kv">
             <div class="container">
-                <div class="row p90 pb0">
+                <div class="row p90 pb-0">
                     <div class="col-4 kv_rotate_l">
                         <h5>
                             VISUAL <br> DESIGNER
@@ -89,7 +89,7 @@
                     </a>
                     <div class="overlay-content">
                         <a href="index.html" onclick="closeNav()">Home</a>
-                        <a href="#about" onclick="closeNav()">About</a>
+                        <a href="about.html" onclick="closeNav()">About</a>
                         <a href="#work" onclick="closeNav()">Work</a>
                         <a href="#contact" onclick="closeNav()">Contact</a>
                     </div>
@@ -98,10 +98,10 @@
             <!-- social -->
             <div class="social">
                 <div class="social_icon">
-                    <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=vivian70435@gmail.com">
+                    <a target="_blank" href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=vivian70435@gmail.com">
                         <div class="gmail"></div>
                     </a>
-                    <a href="https://line.me/ti/p/xPrBA-g--Q#~" >
+                    <a target="_blank" href="https://line.me/ti/p/xPrBA-g--Q#~" >
                         <div class="messenger"></div>
                     </a>
                 </div>
@@ -116,17 +116,22 @@
                     <div class="col-1 title" data-aos="fade-down">
                         <h1>ABOUT</h1>
                     </div>
-                    <div class="col-5 portrait p0">
+                    <div class="col-5 portrait p-0">
                         <img src="assets/images/person_n.png" alt="">
                     </div>
                     <div class="col-6 about_text">
                         <h2>蕭 郁 | Xiao Yui</h2>
-                        <p class="subtitle">A Visual designer who wants to create great web visual.</p>
-                        <p>我原是一名電商視覺設計的平面設計師,專門從事如：登陸頁視覺、活動網頁視覺、數位媒體素材製作(EDM、Banner、Post...)等設計物的製作， 服務過品牌含幫寶適、百靈、吉列、OLAY...基於過往工作經驗， 能準確掌握各式風格不同的商業視覺。
-                        </p>
-                        <p>從事電商視覺設計期間，因接觸到了網頁設計，發現自身對於網頁視覺上有效傳達與接收，有很大的興趣，所以利用業餘時間鑽研自學網頁知識，朝這領域發展。</p>                        
-                        <p>爾後進入網頁公司，學習熟悉了HTML、CSS、SASS、RWD、JQUERY、Adobe XD 的應用。</p>
-                        <a href="about.html" data-aos="fade-down">
+                        <p class="subtitle">A Visual designer</p>
+                        <p>作為一名視覺設計師，我專注於為電商視覺、登陸頁、活動網頁、數位媒體素材等，創建創新且符合風格的解決方案。服務過品牌含幫寶適、百靈、吉列、OLAY……</p>
+                        <p>進入網頁公司任職期間，使我具備了HTML、CSS、RWD、JQUERY、Adobe XD 等網頁設計技能，進而擁有除了設計視覺能力外的網頁編碼能力。</p>
+                        <p>我的目標是通過具視覺吸引力和直觀的設計，來幫助專案增強視覺形象。因此，如果您正在尋找一位富創造力且細心的視覺設計師，來幫助專案提升視覺形象，歡迎瀏覽我的作品實例。</p>
+                        <p  class="mt-4 en-text">I am a visual designer that specialized in creating innovative solutions for E-commerce's visual experience, landing page and activity page of websites, and digital media materials..,etc.  Pampers, Braun, Gillette and OLAY were clients that I've worked with. 
+                        </p>   
+                        <p class="en-text">
+                            My working at the website design company helps me to get familiarize with HTML, CSS, RWD, JQUERY, Adobe XD, etc; and I am also specialized in skills besides visual design, such as webpage coding during my stay with the company.</p>
+                        <p class="en-text">
+                            It has always been my mindset to present each project's digital presence through visual appealing and intuitive design. If you are looking for a creative and detail-oriented designer to improve your project's digital presence, I am confident to be the candidate. Please browse my portfolio for detail.</p>
+                        <a href="about.html">
                             <div class="more_btn">
                                 <h5>MORE ABOUT ME</h5>
                             </div>
@@ -137,409 +142,273 @@
         </div>
         <!-- ABOUT ends -->
         <!-- WORKS -->
-        <div class="works p60 mt200" id="work">
+        <div class="works p60 mt-5" id="work">
             <div class="container">
-                <!-- tab panel-->
+                <!-- filter -->
                 <div class="row">
-                    <div class="row_m-15">
-                        <div class="col-12 tab-wrapper">
-                            <ul class="nav nav-pills">
-                                <li>
-                                    <a class="tablinks" onclick="openCity(event, 'WEB')" id="defaultOpen">WEB</a>
-                                </li>
-                                <li>
-                                    <a class="tablinks" onclick="openCity(event, 'GRAPHIC')" >GRAPHIC</a>
-                                </li>
-                                <li>
-                                    <a class="tablinks" onclick="openCity(event, 'CIS')">CIS</a>
-                                </li>
-                                <li>
-                                    <a class="tablinks" onclick="openCity(event, 'ILLUSTRATION')">ILLUSTRATION</a>
-                                </li>
-                            </ul>
+                    <div class="col-12 tab-wrapper">
+                        <div class="nav nav-pills">
+                            <button class="tablinks mb-3" onClick="clickMe('')"> 全種類 <span>ALL</span></button>
+                            <button class="tablinks mb-3" onClick="clickMe('web')"> 網頁作品 <span>WEB</span></button>
+                            <button class="tablinks mb-3" onClick="clickMe('graphics')"> 平面作品 <span>GRAPHIC</span></button>
+                            <button class="tablinks mb-3" onClick="clickMe('cis')"> 企業識別 <span>CIS</span></button>
                         </div>
                     </div>
                 </div>
-                <!-- tab panel ends -->
-                <!-- tab content -->
+                <!-- filter ends -->
+                <!-- works -->
                 <div class="row">
-                    <div class="col-9 tab-content">
-                        <div id="WEB" class="tabcontent tab-pane">
-                            <div class="row_m-15 bb_lightgray">
-                                <a href="http://yamicook.good8d.com/index.php" target="_blank">
+                    <div class="col-11 tab-content">
+                        <div class="tabcontent tab-pane">
+                            <div class="row">
+                                <a href="w1.html" class="web filterDiv mb-5">
                                     <div class="col-5 works_thumbnail">
                                         <span class="year_title">
-                                            <span class="title">YEAR</span>
+                                            <span class="title">WORK</span>
+                                            <span class="seperator"></span>
+                                            <span class="year">2022</span>
+                                        </span>
+                                        <div class="rotate_works">
+                                            <img src="assets/images/rotate_works-01.svg" alt="">
+                                        </div>
+                                        <img src="./assets/images/WEB1.png" alt="咸魚科技行銷" class="thumbnail">
+                                        <div class="catergory">CATEGORY : WEB</div>
+                                        <div class="works_title">IDOS Technology/咸魚科技行銷
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="w2.html" class="web filterDiv mb-5">
+                                    <div class="col-5 works_thumbnail">
+                                        <span class="year_title">
+                                            <span class="title">WORK</span>
+                                            <span class="seperator"></span>
+                                            <span class="year">2022</span>
+                                        </span>
+                                        <div class="rotate_works">
+                                            <img src="assets/images/rotate_works-01.svg" alt="">
+                                        </div>
+                                        <img src="./assets/images/WEB2.png" alt="徵美徵人官網" class="thumbnail">
+                                        <div class="catergory">CATEGORY : WEB</div>
+                                        <div class="works_title">MatchPay/徵美徵人官網
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="w3.html" class="web filterDiv mb-5">
+                                    <div class="col-5 works_thumbnail">
+                                        <span class="year_title">
+                                            <span class="title">WORK</span>
+                                            <span class="seperator"></span>
+                                            <span class="year">2022</span>
+                                        </span>
+                                        <div class="rotate_works">
+                                            <img src="assets/images/rotate_works-01.svg" alt="">
+                                        </div>
+                                        <img src="./assets/images/WEB3.png" alt="淞和工程企業" class="thumbnail">
+                                        <div class="catergory">CATEGORY : WEB</div>
+                                        <div class="works_title">Songhe Charging/淞和工程企業
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="w4.html" class="web filterDiv mb-5">
+                                    <div class="col-5 works_thumbnail">
+                                        <span class="year_title">
+                                            <span class="title">WORK</span>
                                             <span class="seperator"></span>
                                             <span class="year">2021</span>
                                         </span>
                                         <div class="rotate_works">
                                             <img src="assets/images/rotate_works-01.svg" alt="">
                                         </div>
-                                        <img src="./assets/images/WEB6.png" alt="" class="thumbnail">
+                                        <img src="./assets/images/WEB4.png" alt="新朋派實業" class="thumbnail">
                                         <div class="catergory">CATEGORY : WEB</div>
-                                        <div class="works_title">Yamicook/Yamicook廚藝教室官網
+                                        <div class="works_title">Yamicook/新朋派實業
                                         </div>
                                     </div>
-                                </a>
-                                <a href="https://www.cash-bank.tw/" target="_blank">
+                                </a>   
+                                <a href="w5.html" class="web filterDiv mb-5">
                                     <div class="col-5 works_thumbnail">
                                         <span class="year_title">
-                                            <span class="title">YEAR</span>
+                                            <span class="title">WORK</span>
                                             <span class="seperator"></span>
                                             <span class="year">2021</span>
                                         </span>
                                         <div class="rotate_works">
                                             <img src="assets/images/rotate_works-01.svg" alt="">
                                         </div>
-                                        <img src="./assets/images/WEB7.png" alt="" class="thumbnail">
+                                        <img src="./assets/images/WEB5.png" alt="幫寶適活動網" class="thumbnail">
                                         <div class="catergory">CATEGORY : WEB</div>
-                                        <div class="works_title">cashbank/小貸與你同在</div>
+                                        <div class="works_title">PAMPERS/幫寶適活動網
+                                        </div>
                                     </div>
                                 </a>
-                            </div>
-                            <div class="row_m-15 bb_lightgray">
-                                <a href="https://www.aitouchzs.com/index.php" target="_blank">
+                                <a href="w6.html" class="web filterDiv mb-5">
                                     <div class="col-5 works_thumbnail">
                                         <span class="year_title">
-                                            <span class="title">YEAR</span>
+                                            <span class="title">WORK</span>
+                                            <span class="seperator"></span>
+                                            <span class="year">2020</span>
+                                        </span>
+                                        <div class="rotate_works">
+                                            <img src="assets/images/rotate_works-01.svg" alt="">
+                                        </div>
+                                        <img src="./assets/images/WEB6.png" alt="幫寶適PURE" class="thumbnail">
+                                        <div class="catergory">CATEGORY : WEB</div>
+                                        <div class="works_title">PAMPERS/幫寶適PURE
+                                        </div>
+                                    </div>
+                                </a>    
+                                <a href="g1.html" class="graphics filterDiv mb-5">
+                                    <div class="col-5 works_thumbnail">
+                                        <span class="year_title">
+                                            <span class="title">WORK</span>
+                                            <span class="seperator"></span>
+                                            <span class="year">2020</span>
+                                        </span>
+                                        <div class="rotate_works">
+                                            <img src="assets/images/rotate_works-01.svg" alt="">
+                                        </div>
+                                        <img src="./assets/images/GRA1.png" alt="BOLD洗衣" class="thumbnail">
+                                        <div class="catergory">CATEGORY : GRAPHICS</div>
+                                        <div class="works_title">BOLDボールド/BOLD洗衣
+                                        </div>
+                                    </div>
+                                </a>  
+                                <a href="g2.html" class="graphics filterDiv mb-5">
+                                    <div class="col-5 works_thumbnail">
+                                        <span class="year_title">
+                                            <span class="title">WORK</span>
+                                            <span class="seperator"></span>
+                                            <span class="year">2020</span>
+                                        </span>
+                                        <div class="rotate_works">
+                                            <img src="assets/images/rotate_works-01.svg" alt="">
+                                        </div>
+                                        <img src="./assets/images/GRA2.png" alt="百靈" class="thumbnail">
+                                        <div class="catergory">CATEGORY : GRAPHICS</div>
+                                        <div class="works_title">BRAUN/百靈
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="g3.html" class="graphics filterDiv mb-5">
+                                    <div class="col-5 works_thumbnail">
+                                        <span class="year_title">
+                                            <span class="title">WORK</span>
+                                            <span class="seperator"></span>
+                                            <span class="year">2020</span>
+                                        </span>
+                                        <div class="rotate_works">
+                                            <img src="assets/images/rotate_works-01.svg" alt="">
+                                        </div>
+                                        <img src="./assets/images/GRA3.png" alt="幫寶適動畫美術" class="thumbnail">
+                                        <div class="catergory">CATEGORY : GRAPHICS</div>
+                                        <div class="works_title">PAMPERS/幫寶適動畫美術
+                                        </div>
+                                    </div>
+                                </a>  
+                                <a href="g4.html" class="graphics filterDiv mb-5">
+                                    <div class="col-5 works_thumbnail">
+                                        <span class="year_title">
+                                            <span class="title">WORK</span>
+                                            <span class="seperator"></span>
+                                            <span class="year">2020</span>
+                                        </span>
+                                        <div class="rotate_works">
+                                            <img src="assets/images/rotate_works-01.svg" alt="">
+                                        </div>
+                                        <img src="./assets/images/GRA4.png" alt="幫寶適社群" class="thumbnail">
+                                        <div class="catergory">CATEGORY : GRAPHICS</div>
+                                        <div class="works_title">PAMPERS/幫寶適社群
+                                        </div>
+                                    </div>
+                                </a>    
+                                <a href="g5.html" class="graphics filterDiv mb-5">
+                                    <div class="col-5 works_thumbnail">
+                                        <span class="year_title">
+                                            <span class="title">WORK</span>
+                                            <span class="seperator"></span>
+                                            <span class="year">2020</span>
+                                        </span>
+                                        <div class="rotate_works">
+                                            <img src="assets/images/rotate_works-01.svg" alt="">
+                                        </div>
+                                        <img src="./assets/images/ILL1.png" alt="萬聖節活動視覺" class="thumbnail">
+                                        <div class="catergory">CATEGORY : GRAPHICS</div>
+                                        <div class="works_title">MAMA BAKERY/萬聖節活動視覺
+                                        </div>
+                                    </div>
+                                </a>  
+                                <a href="c1.html" class="cis filterDiv mb-5">
+                                    <div class="col-5 works_thumbnail">
+                                        <span class="year_title">
+                                            <span class="title">WORK</span>
                                             <span class="seperator"></span>
                                             <span class="year">2021</span>
                                         </span>
                                         <div class="rotate_works">
                                             <img src="assets/images/rotate_works-01.svg" alt="">
                                         </div>
-                                        <img src="./assets/images/WEB8.png" alt="" class="thumbnail">
-                                        <div class="catergory">CATEGORY : WEB</div>
-                                        <div class="works_title">Aitouchzs/伸浩電子
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="https://adobe.ly/3JiDmNu" target="_blank">
-                                    <div class="col-5 works_thumbnail">
-                                        <span class="year_title">
-                                            <span class="title">YEAR</span>
-                                            <span class="seperator"></span>
-                                            <span class="year">2021</span>
-                                        </span>
-                                        <div class="rotate_works">
-                                            <img src="assets/images/rotate_works-01.svg" alt="">
-                                        </div>
-                                        <img src="./assets/images/WEB9.png" alt="" class="thumbnail">
-                                        <div class="catergory">CATEGORY : WEB</div>
-                                        <div class="works_title">鉅凱投資股份有限公司                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="row_m-15 bb_lightgray">
-                                <a href="w1.html" >
-                                    <div class="col-5 works_thumbnail">
-                                        <span class="year_title">
-                                            <span class="title">YEAR</span>
-                                            <span class="seperator"></span>
-                                            <span class="year">2020</span>
-                                        </span>
-                                        <div class="rotate_works">
-                                            <img src="assets/images/rotate_works-01.svg" alt="">
-                                        </div>
-                                        <img src="./assets/images/WEB1.png" alt="" class="thumbnail">
-                                        <div class="catergory">CATEGORY : WEB</div>
-                                        <div class="works_title">PAMPERS/幫寶適登陸頁
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="w2.html" >
-                                    <div class="col-5 works_thumbnail">
-                                        <span class="year_title">
-                                            <span class="title">YEAR</span>
-                                            <span class="seperator"></span>
-                                            <span class="year">2019</span>
-                                        </span>
-                                        <div class="rotate_works">
-                                            <img src="assets/images/rotate_works-01.svg" alt="">
-                                        </div>
-                                        <img src="./assets/images/WEB2.png" alt="" class="thumbnail">
-                                        <div class="catergory">CATEGORY : WEB</div>
-                                        <div class="works_title">PAMPERS/幫寶適活動網</div>
-                                    </div>
-                            </div>
-                        </div>
-                        <div id="GRAPHIC" class="tabcontent tab-pane">
-                            <div class="row_m-15 bb_lightgray">
-                                <a href="g1.html" >
-                                    <div class="col-5 works_thumbnail">
-                                        <span class="year_title">
-                                            <span class="title">YEAR</span>
-                                            <span class="seperator"></span>
-                                            <span class="year">2019</span>
-                                        </span>
-                                        <div class="rotate_works">
-                                            <img src="assets/images/rotate_works-01.svg" alt="">
-                                        </div>
-                                        <img src="./assets/images/GRA1.png" alt="" class="thumbnail">
-                                        <div class="catergory">CATEGORY : GRAPHIC</div>
-                                        <div class="works_title">BOLDボールド/BOLD洗衣</div>
-                                    </div>
-                                </a>
-                                <a href="g2.html" >
-                                    <div class="col-5 works_thumbnail">
-                                        <span class="year_title">
-                                            <span class="title">YEAR</span>
-                                            <span class="seperator"></span>
-                                            <span class="year">2020</span>
-                                        </span>
-                                        <div class="rotate_works">
-                                            <img src="assets/images/rotate_works-01.svg" alt="">
-                                        </div>
-                                        <img src="./assets/images/GRA2.png" alt="" class="thumbnail">
-                                        <div class="catergory">CATEGORY : GRAPHIC</div>
-                                        <div class="works_title">LENOR/蘭諾衣物芳香豆</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="row_m-15 bb_lightgray">
-                                <a href="g3.html" >
-                                    <div class="col-5 works_thumbnail">
-                                        <span class="year_title">
-                                            <span class="title">YEAR</span>
-                                            <span class="seperator"></span>
-                                            <span class="year">2020</span>
-                                        </span>
-                                        <div class="rotate_works">
-                                            <img src="assets/images/rotate_works-01.svg" alt="">
-                                        </div>
-                                        <img src="./assets/images/GRA3.png" alt="" class="thumbnail">
-                                        <div class="catergory">CATEGORY : GRAPHIC</div>
-                                        <div class="works_title">BRAUN/百靈</div>
-                                    </div>
-                                </a>
-                                <a href="g4.html" >
-                                    <div class="col-5 works_thumbnail">
-                                        <span class="year_title">
-                                            <span class="title">YEAR</span>
-                                            <span class="seperator"></span>
-                                            <span class="year">2019</span>
-                                        </span>
-                                        <div class="rotate_works">
-                                            <img src="assets/images/rotate_works-01.svg" alt="">
-                                        </div>
-                                        <img src="./assets/images/GRA4.png" alt="" class="thumbnail">
-                                        <div class="catergory">CATEGORY : GRAPHIC</div>
-                                        <div class="works_title">PAMPERS/幫寶適動畫美術</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="row_m-15 bb_lightgray">
-                                <a href="g5.html" >
-                                    <div class="col-5 works_thumbnail">
-                                        <span class="year_title">
-                                            <span class="title">YEAR</span>
-                                            <span class="seperator"></span>
-                                            <span class="year">2020</span>
-                                        </span>
-                                        <div class="rotate_works">
-                                            <img src="assets/images/rotate_works-01.svg" alt="">
-                                        </div>
-                                        <img src="./assets/images/GRA5.png" alt="" class="thumbnail">
-                                        <div class="catergory">CATEGORY : GRAPHIC</div>
-                                        <div class="works_title">DEZCTOP/DEZCTOP</div>
-                                    </div>
-                                </a>
-                                <a href="g6.html" >
-                                    <div class="col-5 works_thumbnail">
-                                        <span class="year_title">
-                                            <span class="title">YEAR</span>
-                                            <span class="seperator"></span>
-                                            <span class="year">2020</span>
-                                        </span>
-                                        <div class="rotate_works">
-                                            <img src="assets/images/rotate_works-01.svg" alt="">
-                                        </div>
-                                        <img src="./assets/images/GRA8.png" alt="" class="thumbnail">
-                                        <div class="catergory">CATEGORY : GRAPHIC</div>
-                                        <div class="works_title">PAMPERS/幫寶適</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="row_m-15 bb_lightgray">
-                                <a href="g7.html" >
-                                    <div class="col-5 works_thumbnail">
-                                        <span class="year_title">
-                                            <span class="title">YEAR</span>
-                                            <span class="seperator"></span>
-                                            <span class="year">2019</span>
-                                        </span>
-                                        <div class="rotate_works">
-                                            <img src="assets/images/rotate_works-01.svg" alt="">
-                                        </div>
-                                        <img src="./assets/images/GRA6.png" alt="" class="thumbnail">
-                                        <div class="catergory">CATEGORY : GRAPHIC</div>
-                                        <div class="works_title">GILETTE/吉列刮鬍刀</div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div id="CIS" class="tabcontent tab-pane">
-                            <div class="row_m-15 bb_lightgray">
-                                <a href="c1.html" >
-                                    <div class="col-5 works_thumbnail">
-                                        <span class="year_title">
-                                            <span class="title">YEAR</span>
-                                            <span class="seperator"></span>
-                                            <span class="year">2020</span>
-                                        </span>
-                                        <div class="rotate_works">
-                                            <img src="assets/images/rotate_works-01.svg" alt="">
-                                        </div>
-                                        <img src="./assets/images/CIS3.png" alt="" class="thumbnail">
-                                        <div class="catergory">CATEGORY : CIS
-                                        </div>
-                                        <div class="works_title">HIGH COVER/海咖潛俱店
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="c2.html" >
-                                    <div class="col-5 works_thumbnail">
-                                        <span class="year_title">
-                                            <span class="title">YEAR</span>
-                                            <span class="seperator"></span>
-                                            <span class="year">2020</span>
-                                        </span>
-                                        <div class="rotate_works">
-                                            <img src="assets/images/rotate_works-01.svg" alt="">
-                                        </div>
-                                        <img src="./assets/images/CIS2.png" alt="" class="thumbnail">
+                                        <img src="./assets/images/CIS2.png" alt="夯豆咖啡" class="thumbnail">
                                         <div class="catergory">CATEGORY : CIS</div>
-                                        <div class="works_title">HANG DOU/夯豆咖啡</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="row_m-15 bb_lightgray">
-                                <a href="c3.html" >
-                                    <div class="col-5 works_thumbnail">
-                                        <span class="year_title">
-                                            <span class="title">YEAR</span>
-                                            <span class="seperator"></span>
-                                            <span class="year">2019</span>
-                                        </span>
-                                        <div class="rotate_works">
-                                            <img src="assets/images/rotate_works-01.svg" alt="">
-                                        </div>
-                                        <img src="./assets/images/CIS1.png" alt="" class="thumbnail">
-                                        <div class="catergory">CATEGORY : CIS</div>
-                                        <div class="works_title">MAMA BAKERY/麻麻烘焙</div>
-                                    </div>
-                                </a>
-                                <a href="c4.html" >
-                                    <div class="col-5 works_thumbnail">
-                                        <span class="year_title">
-                                            <span class="title">YEAR</span>
-                                            <span class="seperator"></span>
-                                            <span class="year">2019</span>
-                                        </span>
-                                        <div class="rotate_works">
-                                            <img src="assets/images/rotate_works-01.svg" alt="">
-                                        </div>
-                                        <img src="./assets/images/CIS4.png" alt="" class="thumbnail">
-                                        <div class="catergory">CATEGORY : CIS</div>
-                                        <div class="works_title">543 COFFEE/ 伍肆參咖啡</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="row_m-15 bb_lightgray">
-                                <a href="c5.html" >
-                                    <div class="col-5 works_thumbnail">
-                                        <span class="year_title">
-                                            <span class="title">YEAR</span>
-                                            <span class="seperator"></span>
-                                            <span class="year">2018</span>
-                                        </span>
-                                        <div class="rotate_works">
-                                            <img src="assets/images/rotate_works-01.svg" alt="">
-                                        </div>
-                                        <img src="./assets/images/CIS5.png" alt="" class="thumbnail">
-                                        <div class="catergory">CATEGORY : CIS
-                                        </div>
-                                        <div class="works_title">FROM TO/抱報器捐專刊
+                                        <div class="works_title">HANG DOU/夯豆咖啡
                                         </div>
                                     </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div id="ILLUSTRATION" class="tabcontent tab-pane">
-                            <div class="row_m-15 bb_lightgray">
-                                <a href="i1.html" >
+                                </a>  
+                                <a href="c2.html" class="cis filterDiv mb-5">
                                     <div class="col-5 works_thumbnail">
                                         <span class="year_title">
-                                            <span class="title">YEAR</span>
+                                            <span class="title">WORK</span>
                                             <span class="seperator"></span>
                                             <span class="year">2020</span>
                                         </span>
                                         <div class="rotate_works">
                                             <img src="assets/images/rotate_works-01.svg" alt="">
                                         </div>
-                                        <img src="./assets/images/ILL1.png" alt="" class="thumbnail">
-                                        <div class="catergory">CATEGORY : ILLUSTRATION</div>
-                                        <div class="works_title">MAMA BAKERY/萬聖節活動視覺</div>
+                                        <img src="./assets/images/CIS3.png" alt="海咖潛俱店" class="thumbnail">
+                                        <div class="catergory">CATEGORY : CIS</div>
+                                        <div class="works_title">HIGH COVER / 海咖潛俱店
+                                        </div>
                                     </div>
                                 </a>
-                                <a href="i2.html" >
+                                <a href="c3.html" class="cis filterDiv mb-5">
                                     <div class="col-5 works_thumbnail">
                                         <span class="year_title">
-                                            <span class="title">YEAR</span>
+                                            <span class="title">WORK</span>
+                                            <span class="seperator"></span>
+                                            <span class="year">2020</span>
+                                        </span>
+                                        <div class="rotate_works">
+                                            <img src="assets/images/rotate_works-01.svg" alt="">
+                                        </div>
+                                        <img src="./assets/images/CIS1.png" alt="麻麻烘焙" class="thumbnail">
+                                        <div class="catergory">CATEGORY : CIS</div>
+                                        <div class="works_title">MAMA BAKERY/麻麻烘焙
+                                        </div>
+                                    </div>
+                                </a>  
+                                <a href="c4.html" class="cis filterDiv mb-5">
+                                    <div class="col-5 works_thumbnail">
+                                        <span class="year_title">
+                                            <span class="title">WORK</span>
                                             <span class="seperator"></span>
                                             <span class="year">2019</span>
                                         </span>
                                         <div class="rotate_works">
                                             <img src="assets/images/rotate_works-01.svg" alt="">
                                         </div>
-                                        <img src="./assets/images/ILL2.png" alt="" class="thumbnail">
-                                        <div class="catergory">CATEGORY : ILLUSTRATION</div>
-                                        <div class="works_title">MAMA BAKERY/茶會海報</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="row_m-15 bb_lightgray">
-                                <a href="i3.html" >
-                                    <div class="col-5 works_thumbnail">
-                                        <span class="year_title">
-                                            <span class="title">YEAR</span>
-                                            <span class="seperator"></span>
-                                            <span class="year">2019</span>
-                                        </span>
-                                        <div class="rotate_works">
-                                            <img src="assets/images/rotate_works-01.svg" alt="">
-                                        </div>
-                                        <img src="./assets/images/ILL3.png" alt="" class="thumbnail">
-                                        <div class="catergory">CATEGORY : ILLUSTRATION
-                                        </div>
-                                        <div class="works_title">MAMA BAKERY/聖誕禮盒
+                                        <img src="./assets/images/CIS4.png" alt="伍肆參咖啡" class="thumbnail">
+                                        <div class="catergory">CATEGORY : CIS</div>
+                                        <div class="works_title">543 COFFEE/ 伍肆參咖啡
                                         </div>
                                     </div>
-                                </a>
-                                <a href="i4.html" >
-                                    <div class="col-5 works_thumbnail">
-                                        <span class="year_title">
-                                            <span class="title">YEAR</span>
-                                            <span class="seperator"></span>
-                                            <span class="year">2018</span>
-                                        </span>
-                                        <div class="rotate_works">
-                                            <img src="assets/images/rotate_works-01.svg" alt="">
-                                        </div>
-                                        <img src="./assets/images/ILL4.png" alt="" class="thumbnail">
-                                        <div class="catergory">CATEGORY : ILLUSTRATION</div>
-                                        <div class="works_title">SAKIZAYA/撒奇萊雅</div>
-                                    </div>
-                                </a>
-                            </div>
+                                </a>                                                                                                                                                                                                                    
+                            </div>                                                                                                     
                         </div>
                     </div>
-                    <div class="col-1 title text_orange offset-md-1" data-aos="fade-down">
+                    <div class="col-1 title text_orange" data-aos="fade-down">
                         <h1>WORKS</h1>
                     </div>
                 </div>
-                <!-- tab content ends -->
+                <!-- works ends -->
             </div>
         </div>
         <!-- WORKS ends -->
@@ -552,7 +421,7 @@
                     </div>
                     <div class="col contact_content">
                         <div class="row">
-                            <div class="col-md-6 offset-md-4 bb_darkgray pt0">
+                            <div class="col-md-6 offset-md-4 bb_darkgray pt-0">
                                 <p class="contact_title">AVAILABLE</p>
                                 <p class="contact_title">TIME</p>
                                 <p class="conatct_item">MON.- FRI. 9:00AM - 6:00PM</p>
@@ -574,8 +443,8 @@
                         </div>
                         <div class="row">
                             <div class="col-md-6 offset-md-4 bb_darkgray">
-                                <p class="contact_title">MESSENGER</p><br>
-                                <p class="conatct_item"><a class="text_orange" href="www.facebook.com/messages/t/mushroom.xiao">messages/t/mushroom.xiao</a></p>
+                                <p class="contact_title">LINE</p><br>
+                                <p class="conatct_item"><a class="text_orange" target="_blank" href="https://line.me/ti/p/xPrBA-g--Q#~" >@yuixiao0514</a></p>
                             </div>
                         </div>
                     </div>
@@ -587,7 +456,7 @@
         <div class="footer p60">
             <div class="container">
                 <div class="row">
-                    <p>Copyright © 2020 XiaoYui. All rights reserved.</p>
+                    <p>Copyright © 2023 XiaoYui. All rights reserved.</p>
                 </div>
             </div>
         </div>
@@ -599,13 +468,20 @@
         <!-- GTTOTOP ends -->
     </div>
     <script>
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click();
+        function clickMe(param){
+        var elements= Array.from(document.getElementsByClassName('filterDiv'));
+        elements.forEach(function(ele){
+            (ele.classList).remove('d-none');
+            if(param!='' && !(Array.from(ele.classList).includes(param))){
+            ele.classList.add('d-none');
+            }
+        })
+        }   
     </script>
     <script>
-    AOS.init({
-        duration: 1500
-    });
+        AOS.init({
+            duration: 1500
+        });
     </script>
 </body>
 

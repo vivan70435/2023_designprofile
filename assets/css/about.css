@@ -46,20 +46,23 @@
 }
 
 .l_pic {
-    position: relative;
+    position: absolute;
+    left: 0;
+    top: -45px;
 }
 
 .r_text {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 100px 150px 100px 300px;
+    padding: 100px 150px 100px 250px;
 }
 
 .r_text p {
     text-align: justify;
 }
-
+.rotate_hithere{
+    position: absolute;
+    right: 10%;
+    top: 5%;
+}
 .rotate_hithere h4 {
     position: absolute;
     right: -35px;
@@ -94,7 +97,6 @@
 .accordion {
     position: relative;
     color: #444;
-    cursor: pointer;
     padding: 50px 10px;
     width: 100%;
     text-align: left;
@@ -108,7 +110,7 @@
 
 }
 
-.accordion:after {
+/* .accordion:after {
     content: '+';
     position: absolute;
     font-size: 35px;
@@ -118,7 +120,7 @@
     bottom: 0;
     margin: 0 20px;
 
-}
+} */
 
 .active,
 .accordion:hover {
@@ -159,7 +161,7 @@
 
 .skills_item_des {
     position: relative;
-    padding: 25px 43px;
+    padding: 95px 43px;
     background-color: #aba8a7f7;
     color: #fff;
     -webkit-transition: .3s ease-in-out;
@@ -195,11 +197,6 @@
     margin-bottom: 25px;
 }
 
-.skills_item_des p {
-    text-align: justify;
-
-
-}
 
 .skills_software {
     margin-top: 20px;

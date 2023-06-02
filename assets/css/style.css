@@ -13,15 +13,6 @@ html {
     scroll-behavior: smooth;
 }
 
-.row_m-15 {
-    margin: 0 -15px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.flex-end {
-    justify-content: flex-end;
-}
 
 body {
     position: relative;
@@ -78,7 +69,9 @@ img {
     z-index: 1;
 }
 
-
+.pr{
+    position: relative;
+}
 /*====================bg_color==========================*/
 
 .bg_maingray {
@@ -114,24 +107,12 @@ img {
     padding: 90px;
 }
 
-.pt0 {
-    padding-top: 0;
-}
-
 .pt60 {
     padding-top: 60px;
 }
 
 .pl10 {
     padding-left: 10px;
-}
-
-.p0 {
-    padding: 0;
-}
-
-.pb0 {
-    padding-bottom: 0;
 }
 
 .mt10 {
@@ -161,7 +142,9 @@ img {
 .mt350 {
     margin-top: 350px;
 }
-
+.mt420{
+    margin-top: 420px;
+}
 .mt600 {
     margin-top: 600px;
 }
@@ -174,16 +157,13 @@ img {
     margin-bottom: 30px;
 }
 
-
+.row_m-15 {
+    margin: 0 -15px;
+    display: flex;
+    flex-wrap: wrap;
+}
 /*====================text==========================*/
 
-.text_align_center {
-    text-align: center;
-}
-
-.text_align_left {
-    text-align: left;
-}
 
 .text_orange {
     color: #f93702;
@@ -429,7 +409,7 @@ img {
     }
 
     to {
-        width: 460px;
+        width: 300px;
     }
 }
 
@@ -457,6 +437,7 @@ img {
 
 .kv .down {
     text-align: center;
+    z-index: 1;
 }
 
 .kv .down img {
@@ -714,13 +695,21 @@ img {
 
 }
 
+.about_text p{
+    margin-bottom: 10px;
+}
+.about .en-text{
+    text-align: left;
+    letter-spacing: 0.2px;
+}
+
 .about_text a {
     display: block;
     width: 200px;
     position: absolute;
     right: 0;
     height: 80px;
-    bottom: -200px;
+    bottom: -105px;
     margin-right: 45px;
     -moz-animation: bounce_X 2s infinite;
     -webkit-animation: bounce_X 2s infinite;
@@ -857,30 +846,32 @@ img {
 
 /*====================tab panel============================*/
 
-.nav-pills li {
+.nav-pills .tablinks{
     text-align: center;
-}
-
-
-.nav-pills li a {
     display: block;
     margin-right: 10px;
     padding: 5px 10px;
     color: #000;
+    border: 1px solid black;
 }
 
-.nav-pills li a:hover {
+.nav-pills .tablinks:hover,.nav-pills .tablinks:hover span {
     color: #fff;
     background-color: #f93702;
     transition: 0.3s;
-
-
 }
 
-.nav li>a.active {
+.nav-pills .tablinks:focus,.nav-pills .tablinks:focus span {
     color: #fff;
-
     background-color: #f93702;
+    transition: 0.3s;
+}
+
+.nav-pills .tablinks span{
+    letter-spacing: 2px;
+    font-size: 8px;
+    color: #f93702;
+    background-color: #79626200;
 }
 
 /*====================tab content============================*/
@@ -939,7 +930,7 @@ img {
 
 .year_title .title {
     position: absolute;
-    left: 5px;
+    left: 3px;
     top: 0;
     font-size: 10px;
 
@@ -967,6 +958,7 @@ img {
     position: absolute;
     left: 60px;
     bottom: 0;
+    /* width: -webkit-fill-available; */
 }
 
 

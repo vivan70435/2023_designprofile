@@ -109,6 +109,12 @@
     display: inline-block;
 
 }
+.accordion a {
+    transition: .3s;
+}
+.accordion a:hover {
+    opacity: .5;
+}
 
 /* .accordion:after {
     content: '+';
